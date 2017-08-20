@@ -148,8 +148,10 @@ opar <- par()
 par(mfrow = c(2,1))
 plot(x = names(steps_interval_weekdays),y = steps_interval_weekdays,
      type = "l",
-     main = "Steps per interval (weekdays)")
-plot(x = names(steps_interval_weekends),y = steps_interval_weekends, 
+     main = "Steps per interval (weekdays)",
+     xlab = "Interval",ylab = "Steps ")
+plot(x = names(steps_interval_weekends),y = steps_interval_weekends,
      type = "l",
-     main = "Steps per interval (weekends)")
+     main = "Steps per interval (weekends)",
+     xlab = "Interval",ylab = "Steps ")
 
